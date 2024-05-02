@@ -1,27 +1,34 @@
-import logo from "../src/assets/images/logo.svg";
+import { Suspense } from "react";
 import "../src/styles/custom.css";
+import routes from "./routes";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {/* get value environment */}
-          {/* {import.meta.env.VITE_APP_ENV}  */}
-          
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {routes.map((data, index) =>
+          data.component ? (
+            <Route
+              key={index}
+              path={data.path}
+              element={
+                <Suspense
+                  fallback={
+                    <>
+                      <div>loading</div>
+                    </>
+                  }
+                >
+                  <data.component />
+                </Suspense>
+              }
+            />
+          ) : null
+        )}
+      </Routes>
+    </BrowserRouter>
+    
   );
 }
 
