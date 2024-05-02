@@ -1,5 +1,5 @@
 # Market News
-Repository for all about market news and sentiments source from Alpha Vantage API. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Repository for all about market, stock, forex, cryptocurrencies news, sentiments and commodities, source from Alpha Vantage API. This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Get started with available script
 
