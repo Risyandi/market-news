@@ -1,6 +1,5 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import logo from "../src/assets/images/logo.svg";
+import "../src/styles/custom.css";
 
 function App() {
   return (
@@ -8,6 +7,9 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
+          {/* get value environment */}
+          {/* {import.meta.env.VITE_APP_ENV}  */}
+          
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
