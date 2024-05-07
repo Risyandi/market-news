@@ -2,10 +2,12 @@ import { Suspense } from "react";
 import "../src/styles/custom.css";
 import routes from "./routes";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Navigation, Footer } from "../src/components";
 
 function App() {
   return (
     <BrowserRouter>
+      <Navigation />
       <Routes>
         {routes.map((data, index) =>
           data.component ? (
@@ -27,8 +29,8 @@ function App() {
           ) : null
         )}
       </Routes>
+      <Footer />
     </BrowserRouter>
-    
   );
 }
 
