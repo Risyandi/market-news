@@ -10,7 +10,8 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:{port}](http://localhost:{port}) to view it in the browser.
 
-> ***port**: you can see port in console terminal when you `npm run start`*  
+> ***port**: you can see port in console terminal when you `npm run start`  
+> default port from vite are :5173*  
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
@@ -27,7 +28,8 @@ Your app is ready to be deployed!
 Runs the app in the production mode.\
 Open [http://localhost:{port}](http://localhost:{port}) to view it in the browser.
 
->***port**: you can see port in console terminal when you `npm run preview`*
+>***port**: you can see port in console terminal when you `npm run preview`*  
+>*default port from vite are :5173*
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
