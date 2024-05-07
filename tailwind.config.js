@@ -6,10 +6,10 @@
 module.exports = {
   content: [
     "./index.html",
-    "./src/components/**/*.{js,ts}",
-    "./src/layouts/**/*.{js,ts}",
-    "./src/pages/**/*.{js,ts}",
-    "./src/**/*.{js,ts}",
+    "./src/components/**/*.{js,jsx,ts,tsx}",
+    "./src/layouts/**/*.{js,jsx,ts,tsx}",
+    "./src/pages/**/*.{js,jsx,ts,tsx}",
+    "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
