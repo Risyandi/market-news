@@ -1,3 +1,7 @@
+/**
+ * environment and modes detail more : https://vitejs.dev/guide/env-and-mode#intellisense-for-typescript
+ */
+
 /// <reference types="vite/client" />
 
 interface ImportMetaEnv {
